@@ -9,9 +9,16 @@
 # Specific patterns to ignore
 data-node
 meili_data*
-librechat*
+# librechat*  <- Remove or comment out this line
 Dockerfile*
 docs
 
 # Ignore all hidden files
 .*
+
+# Add specific exclusions instead of the wildcard
+librechat.log
+librechat.db
+librechat_data/
+# But allow librechat.yaml
+!librechat.yaml
